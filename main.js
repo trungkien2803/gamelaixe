@@ -1,9 +1,9 @@
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 let image = document.getElementById("img");
-let colorCar = ["/huong-doi-tuong/game-lai-xe/car.png",
-                "/huong-doi-tuong/game-lai-xe/car2.png",
-                "/huong-doi-tuong/game-lai-xe/car3.png"];
+let colorCar = ["car.png",
+                "car2.png",
+                "car3.png"];
 let imageB1 = document.getElementById("imgB1");
 let imageB2 = document.getElementById("imgB2");
 let imageB3 = document.getElementById("imgB3");
