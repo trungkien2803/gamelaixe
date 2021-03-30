@@ -52,7 +52,7 @@ function start(){
     document.getElementById("audio").src = "audio.mp3"
     ctx.font = "bold 50px Arial";
     ctx.fillStyle = "red";
-    ctx.fillText("Are you ready?",250,300)
+    ctx.fillText("Are you ready?",130,300)
     setTimeout(function(){
         playGame()
     },1000)
