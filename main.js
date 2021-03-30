@@ -43,10 +43,10 @@ function docReady() {
 function start(){
     point = 0;
     car = new Car(300,580,15);
-    barrier = new Barrier(imageB1,-100,7);
-    barrier2 = new Barrier(imageB2,-100,6);
-    barrier3 = new Barrier(imageB3,-100,6.5);
-    barrier4 = new Barrier(imageB1,-100,6.2);
+    barrier = new Barrier(imageB1,-100,5);
+    barrier2 = new Barrier(imageB2,-100,4.7);
+    barrier3 = new Barrier(imageB3,-100,4.5);
+    barrier4 = new Barrier(imageB1,-100,4.3);
     reward = new Reward ()
     selectColor()
     document.getElementById("audio").src = "audio.mp3"
