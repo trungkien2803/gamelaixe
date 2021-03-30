@@ -36,6 +36,7 @@ function moveSelection(evt) {
     }
 }
 function docReady() {
+    window.addEventListener("onkeypress", moveSelection);
     window.addEventListener("keydown", moveSelection);
     window.addEventListener("keyup", moveSelection);
 }
@@ -101,18 +102,18 @@ function checkLost(){
     let carY = car.y + barrier.height;
     let carXW = car.x + car.width;
     let carYH = car.y + barrier2.height;
-    let barierX = barrier.x + barrier.width-3;
+    let barrierX = barrier.x + barrier.width-3;
     let barrierY = barrier.y + barrier.height-8;
     let barrier2X = barrier2.x + barrier2.width-3;
     let barrier2YH = barrier2.y + barrier2.height-8;
-    let barier3X = barrier3.x + barrier3.width-3;
+    let barrier3X = barrier3.x + barrier3.width-3;
     let barrier3Y = barrier3.y + barrier3.height-8;
     let barrier4X = barrier4.x + barrier4.width-3;
     let barrier4YH = barrier4.y + barrier4.height-8;
-    if(barrier.x <= car.x && car.x <= barierX && barrierY >= car.y && barrierY <=carY){
+    if(barrier.x <= car.x && car.x <= barrierX && barrierY >= car.y && barrierY <=carY){
         stop1()
     }
-    else if(barrier.x <= carX && carX <= barierX && barrierY >= car.y && barrierY<= carY){
+    else if(barrier.x <= carX && carX <= barrierX && barrierY >= car.y && barrierY<= carY){
         stop1()
     }
     else if(barrier2.x <= car.x && car.x <= barrier2X && barrier2YH >= car.y && barrier2YH <=carYH){
@@ -121,10 +122,10 @@ function checkLost(){
     else if(barrier2.x <= carXW && carXW <= barrier2X && barrier2YH >= car.y && barrier2YH<= carYH){
         stop1()
     }
-    else if(barrier3.x <= car.x && car.x <= barier3X && barrier3Y >= car.y && barrier3Y <=carY){
+    else if(barrier3.x <= car.x && car.x <= barrier3X && barrier3Y >= car.y && barrier3Y <=carY){
         stop1()
     }
-    else if(barrier3.x <= carX && carX <= barier3X && barrier3Y >= car.y && barrier3Y<= carY){
+    else if(barrier3.x <= carX && carX <= barrier3X && barrier3Y >= car.y && barrier3Y<= carY){
         stop1()
     }
     else if(barrier4.x <= car.x && car.x <= barrier4X && barrier4YH >= car.y && barrier4YH <=carYH){
