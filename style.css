@@ -1,5 +1,7 @@
 html{
     color: white;
+    background-image: url(/main-img.jpg);
+    opacity: 0.92;
 }
 .container {
     width: 1400px;
@@ -56,8 +58,4 @@ select {
 }
 canvas {
     margin-left: 250px;
-}
-html {
-    background-image: url(/main-img.jpg);
-    opacity: 0.92;
 }
