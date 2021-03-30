@@ -104,6 +104,9 @@ setInterval(function(){
     barrier2.setSpeed()
     barrier4.setSpeed()
 },5000)
+setTimeout(function(){
+    barrier.speed += 2;
+},15000)
 function stop1(){
     document.getElementById("audio").src = "audio-lost.mp3"
     cancelAnimationFrame(animationId)
