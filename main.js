@@ -54,8 +54,8 @@ function start(){
     ctx.fillStyle = "red";
     ctx.fillText("Are you ready?",130,300)
     setTimeout(function(){
-        playGame()
     },1000)
+    setTimeout(playGame,1500)
 }
 function playGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
