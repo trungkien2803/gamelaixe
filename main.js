@@ -50,7 +50,12 @@ function start(){
     reward = new Reward ()
     selectColor()
     document.getElementById("audio").src = "audio.mp3"
-    playGame()
+    ctx.font = "bold 50px Arial";
+    ctx.fillStyle = "red";
+    ctx.fillText("Are you ready?",250,300)
+    setTimeout(function(){
+        playGame()
+    },1000)
 }
 function playGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
