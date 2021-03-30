@@ -54,8 +54,14 @@ function start(){
     ctx.fillStyle = "red";
     ctx.fillText("Are you ready?",130,300)
     setTimeout(function(){
-    },1000)
-    setTimeout(playGame,1500)
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        background1.drawBackground();
+        car.drawCar();
+        ctx.font = "bold 50px Arial";
+        ctx.fillStyle = "red";
+        ctx.fillText("Let's go",230,300)
+    },1500)
+    setTimeout(playGame,2000)
 }
 function playGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
