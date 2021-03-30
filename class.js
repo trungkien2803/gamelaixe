@@ -41,19 +41,19 @@ class Reward {
 class Background {
     constructor(img){
         this.x = 0;
-        this.y = -6300;
+        this.y = -63000;
         this.img = img
     }   
     drawBackground(){
         this.img.addEventListener("load", (e) => {
-            ctx.drawImage(this.img, 0, this.y, 600, 7000);
+            ctx.drawImage(this.img, 0, this.y, 600, 70000);
         });
-        ctx.drawImage(this.img, 0, this.y, 600, 7000);
+        ctx.drawImage(this.img, 0, this.y, 600, 70000);
     }
     run(){
         this.y += 4
         if(this.y == 0){
-            this.y = -6300
+            this.y = -63000
         }
     }
 }
