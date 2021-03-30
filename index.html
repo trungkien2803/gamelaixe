@@ -10,27 +10,28 @@
 </head>
 
 <body onload="docReady(),load1()">
-    <audio autoplay loop id="audio"> 
-        <source  src="audio.mp3" type="audio/mpeg">
+    <audio autoplay loop id="audio">
+        <source src="audio.mp3" type="audio/mpeg">
     </audio>
     <div class="container">
         <canvas id="canvas" width="600px" height="700px" style="border: 1px solid black"></canvas>
         <div style="display: none">
-            <img id="img" src="car.png"/>
+            <img id="img" src="car.png" />
             <img src="car2-1.png" alt="" id="imgB1">
             <img src="car2-2.png" alt="" id="imgB2">
             <img src="car2-3.png" alt="" id="imgB3">
             <img src="background1.png" alt="" id="img3">
-            
+
         </div>
         <div class="info">
             <h1 class="heading">Point</h1>
-            
+
             <div class="point">
-                <p id= "point" style="color: red;"></p>
+                <p id="point" style="color: red; font-size: 20px; font-weight: 500;"></p>
             </div>
 
-            <button type="button" onclick="start()" class="button" style="background-color: red; margin-top: 50px;">Start</button>
+            <button type="button" onclick="start()" class="button"
+                style="margin-top: 50px;">Start</button>
 
             <div>
                 <select name="" id="select" style="margin-top: 20px;">
@@ -40,7 +41,6 @@
                     <option value="gray car">Gray</option>
                 </select>
             </div>
-            
             <div class="tutorial">
                 <button class="button" id="tutorial-heading" onclick="showTutorial()">Hướng dẫn</button>
                 <p id="tutorial-text">Trần Trung Kiên</p>
@@ -48,6 +48,7 @@
         </div>
     </div>
 </body>
+
 </html>
 <script src="class.js"></script>
 <script src="main.js"></script>
