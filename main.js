@@ -48,7 +48,7 @@ function start(){
     barrier4 = new Barrier(imageB1,-100,6.2);
     reward = new Reward ()
     selectColor()
-    document.getElementById("audio").src = "/huong-doi-tuong/game-lai-xe/audio.mp3"
+    document.getElementById("audio").src = "audio.mp3"
     playGame()
 }
 function playGame() {
@@ -93,7 +93,7 @@ setInterval(function(){
     barrier4.setSpeed()
 },5000)
 function stop1(){
-    document.getElementById("audio").src = "/huong-doi-tuong/game-lai-xe/audio-lost.mp3"
+    document.getElementById("audio").src = "audio-lost.mp3"
     cancelAnimationFrame(animationId)
 }
 function checkLost(){
